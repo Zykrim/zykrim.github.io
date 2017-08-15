@@ -48,11 +48,8 @@
         height:20%;
     }
     .rules {
-
-    }
-    .rules h1 {
-        font-size: 40px;
-        margin-left: 4.8%;
+        text-align: justify;
+        text-justify: inter-word;
     }
     .rules li{
         list-style: none;
