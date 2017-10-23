@@ -1,238 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dovercourt Computer Room</title>
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/Dovercourt-Icon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <title>Computer Room</title>
+    <link rel="icon" type="image/png" href="./Images/Dovercourt-Pumpkin-Icon.png">
     <link rel="stylesheet" href="./CSS.css"/>
     <script src="./jquery-3.2.1.min.js"></script>
     <script src="app.js"></script>
 </head>
 <body>
-<!--Header-->
-<div class="container">
-    <div id="header" class="row">
-        <div class="col-sm-3"></div>
-        <div center class="col-sm-6">
-            <img id="banner" src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/Dovercourt-Banner.png"/>
+    <div class="maingrid">
+        <div class="header">
+            <img class="logo" src="Images/Dovercourt-Pumpkin.png">
+            <div class="logotext"> Dovercourt Boys & Girls Club
+            <br>Computer Room</div>
+        </div>
+        <div class="navbar">
+            <div></div>
+            <button class="navbtn-1 navbtn-active">Educational</button>
+            <button class="navbtn-2 navbtn">Free Period</button>
+            <a href="http://www.dovercourtkids.com/" class="navbtn-3 navbtn"><button>Dovercourt Kids</button></a>
+        </div>
+        <!-- Rules -->        
+        <div class="sidebar">
+            <div class="rules"> 
+                <h1>Computer Room Rules </h1>
+                <br>- Respect & Listen to the staff around you.
+                <br><br>- No food or drinks allowed inside the room.
+                <br><br>- Please do not run around the computers.
+                <br><br>- If you would like to talk please whisper,
+                 the computer room should be a quiet place.
+                <br><br>- Always make sure you're playing on your
+                 own account, and log out before leaving.
+                <br><br>- Remember to clean up your area before
+                 you leave, no one likes a messy room.
+                <br><br>- Never give your personal information to anyone online.
+            </div>
+        </div>
+        <!-- Slides --> 
+        <div class="slide slide-2" style="display: none;">
+            <a class="game" href="http://pokemon-planet.com/"><img src="Images/pokemonplanet.jpg"></a>           
+            <a class="game" href="https://www.unovarpg.com/"><img src="Images/unovarpg.jpg"></a>
+            <a class="game" href="http://www.kogama.com"><img src="Images/KoGaMa.jpg"></a>
+            <a class="game" href="http://agar.io/"><img src="Images/agario.jpg"></a>
+            <a class="game" href="http://diep.io/"><img src="Images/diepio.jpg"></a>
+            <a class="game" href="http://iogames.space/"><img src="Images/iogames.jpg"></a>
+            <a class="game" href="http://slither.io/"><img src="Images/slitherio.jpg"></a>
+            <a class="game" href="http://splix.io/"><img src="Images/splixio.jpg"></a>
+            <a class="game" href="http://www.y8.com/"><img src="Images/y8.jpg"></a>
+        </div>
+        <div class="slide slide-1 slide-active">
+            <a class="game" href="http://kizi.com/"><img src="Images/kizi.jpg"></a>
+            <a class="game" href="http://www.coolmath-games.com/"><img src="Images/cmg.jpg"></a>
+            <a class="game" href="http://www.friv.com/"><img src="Images/friv.jpg"></a>
+            <a class="game" href="http://www.animaljam.com/"><img src="Images/animaljam.jpg"></a>
+            <a class="game" href="https://sketch.io/sketchpad/"><img src="Images/sketchio.jpg"></a>
+            <a class="game" href="https://quickdraw.withgoogle.com/"><img src="Images/gqd.jpg"></a>
+            <a class="game" href="https://www.prodigygame.com/Play/"><img src="Images/prodigy.jpg"></a>
+            <a class="game" href="https://www.playcodemonkey.com/challenges/0"><img src="Images/codemonkey.jpg"></a>
+            <a class="game" href="https://scratch.mit.edu/"><img src="Images/scratch.jpg"></a>
         </div>
     </div>
-</div>
-<!--Nav Bar-->
-<!--<div class="container">
-    <div  class="row">
-        <div class="col-sm-2">
-            <img id="icon" src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/ImagesWIP/Dovercourt-Icon.png" >
-        </div>
-    </div>
-</div>-->
-<div id="color" class="container-fluid">
-    <div id="navbar" class="row">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <button class="btn-1 btn-active">Educational</button>
-                </div>
-                <div class="col-sm-3">
-                    <button class="btn-2 btn-link">Switch</button>
-                    <!--<h3><a href="#">Switch</a></h3>-->
-                </div>
-                <div class="col-sm-3">
-                    <button class="btn-3 btn-link">Rules</button>
-                </div>
-                <div class="col-sm-3">
-                    <button class="btn-4 btn-link">Schedule</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="slides">
-<!--Educational Slide-->
-<div class="slide slide-1 slide-active">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="http://www.animaljam.com/">
-                        <h4 class="slide-text">Animal Jam</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/animaljam.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="https://www.prodigygame.com/Play/">
-                        <h4 class="slide-text">Prodigy</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/prodigy.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="http://www.coolmath-games.com/">
-                        <h4 class="slide-text"> Cool Math Games</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/cmg.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="http://kizi.com/">
-                        <h4 class="slide-text">Kizi</h4>               
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/kizi.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="https://sketch.io/sketchpad/">
-                        <h4 class="slide-text">Sketch.io</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/sketchio.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="https://quickdraw.withgoogle.com/">
-                        <h4 class="slide-text">Google Quick Draw</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/gqd.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>            
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="https://www.playcodemonkey.com/challenges/0">
-                        <h4 class="slide-text">Code Monkey</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/codemonkey.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="http://www.tvokids.com/">
-                        <h4 class="slide-text">TVO Kids</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/tvo.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Switch Slide-->
-<div class="slide slide-2">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="http://www.agar.io">
-                        <h4 class="slide-text">Agar.io</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/agario.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="http://www.diep.io">
-                        <h4 class="slide-text">Diep.io</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/diepio.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="http://www.slither.io">
-                        <h4 class="slide-text">Slither.io</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/slitherio.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="http://splix.io/">
-                        <h4 class="slide-text"> Splix.io</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/splixio.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="http://www.friv.com/">
-                        <h4 class="slide-text">Friv</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/friv.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="http://www.pokemon-planet.com/">
-                        <h4 class="slide-text">Pokemon Planet</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/pokemonplanet.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="https://www.unovarpg.com/">
-                        <h4 class="slide-text">Unova RPG</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/unovarpg.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="placeholder">
-                    <a href="http://WWW.Y8.COM/">
-                        <h4 class="slide-text">Y8</h4>
-                        <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/y8.jpg" class="slide-img"/>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Rules Slide-->
-<div class="slide slide-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="rules placeholder">
-                    <h1>Rules</h1>
-                    <ul>
-                        <li>Respect & Listen to the staff around you,<br>they're trying to help you and keep you safe.</li>
-                        <br>
-                        <li>No food or drinks allowed inside the room,<br>we don't want the computers to get damaged.</li>
-                        <br>
-                        <li>Refrain from running or horsing around,<br>you don't want to hurt yourself or others.</li>
-                        <br>
-                        <li>If you would like to talk please whisper,<br>the computer room should be a quiet place.</li>
-                        <br>
-                        <li>Never give anyone online your personal informtation! </li>
-                        <br>
-                        <li> Always make sure you're playing on your own account,<br>you wouldn't want someone playing on yours.</li>
-                        <br>
-                        <li>Remember to clean up your area before you leave,<br>no one likes a messy room.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="slide slide-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-10">
-                <div>
-                    <img src="https://raw.githubusercontent.com/Zykrim/zykrim.github.io/master/Images/Dovercourt-Schedule.jpg" class="schedule"/>
-                </div>
-            </div>
-        </div>          
-    </div>    
-</div>
-</div>
 </body>
 </html>
