@@ -6,8 +6,8 @@ $(document).ready(function () {
             otherBtn = $('.navbtn-2, .navbtn-3, .btn-4');
         
         if (!thisSlide.hasClass('slide-active')) {
-            currentSlide.slideUp(300).removeClass('slide-active');
-            thisSlide.slideDown(300).addClass('slide-active');
+            currentSlide.hide(500).removeClass('slide-active');
+            thisSlide.show(500).addClass('slide-active');
         }
         
         if (!thisBtn.hasClass('navbtn-active')) {
@@ -23,8 +23,8 @@ $(document).ready(function () {
             otherBtn = $('.navbtn-1, .navbtn-3, .btn-4');
     
         if (!thisSlide.hasClass('slide-active')) {
-            currentSlide.slideUp(300).removeClass('slide-active');
-            thisSlide.slideDown(300).addClass('slide-active');
+            currentSlide.hide(500).removeClass('slide-active');
+            thisSlide.show(500).addClass('slide-active');
         }
         
         if (!thisBtn.hasClass('navbtn-active')) {
@@ -40,27 +40,9 @@ $(document).ready(function () {
             otherBtn = $('.navbtn-1, .navbtn-2, .btn-4');
     
         if (!thisSlide.hasClass('slide-active')) {
-            currentSlide.slideUp(300).removeClass('slide-active');
-            thisSlide.slideDown(300).addClass('slide-active');
+            currentSlide.hide(500).removeClass('slide-active');
         }
         
-        if (!thisBtn.hasClass('navbtn-active')) {
-            currentBtn.removeClass('navbtn-active');
-            thisBtn.removeClass('navbtn');
-            thisBtn.addClass('navbtn-active');
-            otherBtn.addClass('navbtn');
-        }
-    });
-    $('.btn-4').click(function () {
-        var currentSlide = $('.slide-active'), thisSlide = $('.slide-4'),
-            currentBtn = $('.navbtn-active'), thisBtn = $('.btn-4'),
-            otherBtn = $('.navbtn-1, .navbtn-2, .navbtn-3');
-    
-        if (!thisSlide.hasClass('slide-active')) {
-            currentSlide.slideUp(300).removeClass('slide-active');
-            thisSlide.slideDown(300).addClass('slide-active');
-        }
-   
         if (!thisBtn.hasClass('navbtn-active')) {
             currentBtn.removeClass('navbtn-active');
             thisBtn.removeClass('navbtn');
