@@ -48,14 +48,14 @@ button {
 }
 
 .logo{
-    padding-top: 2.25vw;
-    padding-left: 1.25vw;
+    padding-top: 1vw;
+    padding-left: 2vw;
     grid-area: logo;
-    width: 85%;
+    width: 75%;
 }
 .logotext {
-    padding: 5.5% 0% 4% 6%;
-    color: #33a2dd;
+    padding: 3.5% 0% 4% 7%;
+    color: #FFF;
     font-size: 2vw;
     grid-area: text;
 }
@@ -76,6 +76,7 @@ button {
     width: 100%;
     text-align: center;
     font-size: 1.5vw;
+    transition: color .25s ease;
 }
 
 .navbtn:hover{
@@ -116,7 +117,7 @@ button {
     color: #33a2dd; 
     padding: 0% 3%;
     text-align: justify;
-    font-size: 1.145vw;
+    font-size: 1.08vw;
 }
 
 .rules h1 {
@@ -126,24 +127,26 @@ button {
     margin: 2% 2% -2% 2%
 }
 .sidebar {
-    z-index: 10;
+    z-index 10;
     grid-area: sidebar;   
     background-color: #222;
     border: .3vh #33a2dd;
     padding: 2%;
 }
-
 .game img {
     z-index: 10;
-    border: .6vh solid #33a2dd;
+    /*border: .6vh solid #33a2dd;*/
     width: 99%;
     height: auto;
 }
-.game div {
+.game:hover {
+    color: gold;
+    width: 14vw;
+    padding: .6vh .6vw; 
+}
+.game {
     font-size: 1vw;
     text-align: center;
     color: #33a2dd;
-}
-.game img:hover{
-    border-color: gold;
+    transition: color .5s ease;
 }
