@@ -142,7 +142,7 @@ button {
 .game:hover {
     color: gold;
     width: 14vw;
-    padding: .6vh .6vw; 
+    padding: .6vh 0 0 .6vw; 
 }
 .game {
     font-size: 1vw;
