@@ -50,13 +50,14 @@ button {
 }
 .navbar {
     text-align: center;
-    background-color: #66cc33;
+    background-color: #ff9a00;
     grid-area: navbar;
     display:grid;
         grid-template-columns: auto 25% 25% 25% auto;
 }
 .navbar a {
     width: 100%;
+    height: 100%;
     margin: auto;
 }
 .navbtn {
@@ -73,42 +74,56 @@ button {
     z-index: 1;
     color: #000;
     font-size: 1.5vw;
-    background-color: #ccffcc;
-    outline: 0.15vw solid #ccffcc;
+    background-color: #E58A00;
+    outline: 0.15vw solid #E58A00;
 
 }
 /* Sidebar Contents */
 .slide {
     padding: 1%;
-    grid-area: slide;     
+    grid-area: slide;
     display: grid;
         grid-gap: 0.1vw 3vh;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .slide-active {
     padding: 1%;
-    grid-area: slide;     
+    grid-area: slide;
     display: grid;
-        grid-gap: 0.25vh 1.75vw;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0.25vh 1.50vw;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-flow: row;
 }
 .sidebar {
-    grid-area: sidebar; 
+    grid-area: sidebar;
     text-align: center;
 }
 .rules {
     font-size: 1vw;
-    color: #66cc33;
+    color: #ff9a00;
     font-size: 1.12vw;
 }
 /* Game Contents*/
+.RIP {
+    padding-top: 5%;
+    width: 100%;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4 ;
+}
+.doverkids {
+    padding: 2% 0%;
+    width: 100%;
+  }
+.doverkids img {
+    width: 49.75vw;
+  }
 .game {
     padding: 7.5% 1% 0% 0%;
     position: relative;
     color: #FFF;
-    font-size: 1.5vw;
+    font-size: 1vw;
     text-align: center;
 }
 .game:hover img{
