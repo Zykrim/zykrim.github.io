@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "FuturaLT Heavy";
+  src: url("./Fonts/FuturaLT-Heavy.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #84b0f7;
+  font-family: "FuturaLT Heavy";
+}
+.snow-1 {
+  display:none;
+}
+.snow-2 {
+  display:none;
+}
+.main {
+  color: #fff;
+  background-color: #6ca1f5;
+  box-shadow: 0 0 15px #406093;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 50px auto 1fr;
+  grid-template-areas:
+  "header"
+  "nav"
+  "content"
+}
+.header {
+  grid-area: header;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px;0
+}
+.header img {
+  grid-column: 1 / 2;
+  margin: auto;
+  height: 80%;
+}
+.header h1 {
+  color: #fff;
+  grid-column: 2 / 4;
+  font-size: 22px;
+  line-height: 35px;
+  margin: 0 auto;
+}
+.nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #e4eefd;
+  color: #6ca1f5;
+  transition: color 1s ease;
+}
+.nav h3 {
+  text-align:center;
+  font-size: 24px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.nav--active {
+  background-color: #b4cffa;
+  color: #fff;
+  outline: 1px solid #b4cffa;
+}
+.nav--btn {
+  transition: color .25s ease;
+}
+/*.nav--btn:hover {
+  color: #6ca1f5;
+}*/
+.slide {
+  display: none;
+}
+.slide--active {
+  display: block;
+}
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 7.5px;
+}
+.game {
+  position: relative;
+  padding: 7.5px;
+}
+.game img {
+  display: block;
+  z-index: -1;
+  width: 100%;
+  transition: opacity .75s ease;
+  will-change: opacity;
+  box-shadow: 0px 3px 5px #406093;
+}
+.game div {
+  display:none;
+}
+.rules {
+  background-color: #b4cffa;
+  margin: 15px;
+  padding: 20px;
+  line-height: 35px;
+  font-size: 15px;
+}
+.doverkids {
+  position: relative;
+  margin: 15px;
+}
+.doverkids a img {
+  display: block;
+  z-index: -1;
+  width: 100%;
+  transition: opacity .75s ease;
+  will-change: opacity;
+  box-shadow: 0px 3px 5px #406093;
+}
+.doverkids a div {
+  display: none;
+}
+
+@media only screen and (min-width: 360px) {
+  .header h1 {
+    font-size: 28px;
+  }
+  .header img {
+    height: 90%;
+  }
+}
+@media only screen and (min-width: 736px) {
+  .header {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .header img {
+    grid-column: 1 / 2;
+  }
+  .header h1 {
+    grid-column: 2 / 3;
+  }
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr minmax(1000px, 80%) 1fr;
+    grid-template-areas: "snow-1 main snow-2";
+  }
+  .snow-1 {
+    display:block;
+    grid-area: snow-1;
+  }
+  #particles-js, #particles-js2 {
+    height: calc(100vh - 4px);
+  }
+  .snow-2 {
+    display:block;
+    grid-area: snow-2;
+  }
+  .main {
+    grid-area: main;
+    height: 100vh;
+  }
+  .content {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .game:hover div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity .75s ease;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    opacity: 1;
+  }
+  .game:hover img{
+      opacity: .1;
+  }
+  .doverkids:hover a div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity .75s ease;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    opacity: 1;
+  }
+  .doverkids:hover a img {
+    opacity: .1;
+  }
+}
