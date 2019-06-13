@@ -10,10 +10,10 @@ body {
   background-color: #85d65c;
   font-family: "FuturaLT Heavy";
 }
-.snow-1 {
+.flower-1 {
   display:none;
 }
-.snow-2 {
+.flower-2 {
   display:none;
 }
 .main {
@@ -151,14 +151,14 @@ body {
     grid-template-columns: 1fr minmax(1000px, 80%) 1fr;
     grid-template-areas: "snow-1 main snow-2";
   }
-  .snow-1 {
+  .flower-1 {
     display:block;
     grid-area: snow-1;
   }
   #particles-js, #particles-js2 {
     height: calc(100vh - .4vh);
   }
-  .snow-2 {
+  .flowerSprin-2 {
     display:block;
     grid-area: snow-2;
   }
