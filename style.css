@@ -149,18 +149,18 @@ body {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr minmax(1000px, 80%) 1fr;
-    grid-template-areas: "snow-1 main snow-2";
+    grid-template-areas: "flower-1 main flower-2";
   }
   .flower-1 {
     display:block;
-    grid-area: snow-1;
+    grid-area: flower-1;
   }
   #particles-js, #particles-js2 {
     height: calc(100vh - .4vh);
   }
-  .flowerSprin-2 {
+  .flower-2 {
     display:block;
-    grid-area: snow-2;
+    grid-area: flower-2;
   }
   .main {
     grid-area: main;
