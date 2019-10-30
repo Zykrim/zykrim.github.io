@@ -24,7 +24,7 @@ particlesJS('particles-js',
       "shape": {
         "type": "image",
         "image": {
-          "src": ["Images/pumpakin.png","Images/bone.png","Images/leaf.png"],
+          "src": ["Images/pumpakin2.png","Images/bone.png","Images/leaf.png"],
           "type" : "png",
           "width": 50,
           "height": 50
@@ -77,7 +77,7 @@ particlesJS('particles-js2',
       "shape": {
         "type": "image",
         "image": {
-          "src": ["Images/pumpakin.png","Images/bone.png","Images/leaf.png"],
+          "src": ["Images/pumpakin2.png","Images/bone.png","Images/leaf.png"],
           "type" : "png",
           "width": 50,
           "height": 50
