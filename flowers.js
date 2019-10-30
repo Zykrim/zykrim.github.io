@@ -15,16 +15,16 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 2,
+        "value": 1.5,
         "density": {
           "enable": true,
-          "value_area":2
+          "value_area":1
         }
       },
       "shape": {
         "type": "image",
         "image": {
-          "src": ["Images/flower1.png","Images/flower2.png","Images/flower3.png"],
+          "src": ["Images/Pumpakin.png","Images/bone.png","Images/leaf.png"],
           "type" : "png",
           "width": 50,
           "height": 50
@@ -40,8 +40,13 @@ particlesJS('particles-js',
       "move": {
         "enable": true,
         "speed": 1.5,
-        "direction": "left",
+        "direction": "bottom",
         "random": true,
+        "attract": {
+          "enable": true,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
       }
     },
     "interactivity": {
@@ -63,7 +68,7 @@ particlesJS('particles-js2',
   {
     "particles": {
       "number": {
-        "value": 1,
+        "value": 1.5,
         "density": {
           "enable": true,
           "value_area": 1
@@ -72,7 +77,7 @@ particlesJS('particles-js2',
       "shape": {
         "type": "image",
         "image": {
-          "src": ["Images/flower1.png","Images/flower2.png","Images/flower3.png"],
+          "src": ["Images/Pumpakin.png","Images/bone.png","Images/leaf.png"],
           "type" : "png",
           "width": 50,
           "height": 50
@@ -88,8 +93,13 @@ particlesJS('particles-js2',
       "move": {
         "enable": true,
         "speed": 1.5,
-        "direction": "right",
+        "direction": "bottom",
         "random": true,
+        "attract": {
+          "enable": true,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
       }
     },
     "interactivity": {
