@@ -7,19 +7,19 @@
   margin: 0;
 }
 body {
-  background-color: #111;
+  background-color: #84b0f7;
   font-family: "FuturaLT Heavy";
 }
-.flower-1 {
+.snow-1 {
   display:none;
 }
-.flower-2 {
+.snow-2 {
   display:none;
 }
 .main {
   color: #fff;
-  background-color: #222;
-  box-shadow: 0 0 15px #2f2f2f;
+  background-color: #6ca1f5;
+  box-shadow: 0 0 15px #406093;
   display:grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 50px auto 1fr;
@@ -38,7 +38,7 @@ body {
 .header img {
   grid-column: 1 / 2;
   margin: auto;
-  height: 125%%;
+  height: 80%;
 }
 .header h1 {
   color: #fff;
@@ -51,8 +51,8 @@ body {
   grid-area: nav;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #ff9a00;
-  color: #111;
+  background-color: #e4eefd;
+  color: #6ca1f5;
   transition: color 1s ease;
 }
 .nav h3 {
@@ -62,9 +62,9 @@ body {
   cursor: pointer;
 }
 .nav--active {
-  background-color: #E58A00;
+  background-color: #b4cffa;
   color: #fff;
-  outline: 1px solid #E58A00;
+  outline: 1px solid #b4cffa;
 }
 .nav--btn {
   transition: color .25s ease;
@@ -94,14 +94,13 @@ body {
   width: 100%;
   transition: opacity .75s ease;
   will-change: opacity;
-  box-shadow: 0px 3px 5px #2f2f2f;
+  box-shadow: 0px 3px 5px #406093;
 }
 .game div {
   display:none;
 }
 .rules {
-  background-color: #111;
-  color: #ff9a00;
+  background-color: #b4cffa;
   margin: 15px;
   padding: 20px;
   line-height: 35px;
@@ -128,7 +127,7 @@ body {
     font-size: 28px;
   }
   .header img {
-    height: 125%;
+    height: 90%;
   }
 }
 @media only screen and (min-width: 736px) {
@@ -141,9 +140,6 @@ body {
   .header h1 {
     grid-column: 2 / 3;
   }
-  .header img {
-    height: 125%;
-  }
   .content {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -152,18 +148,18 @@ body {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr minmax(1000px, 80%) 1fr;
-    grid-template-areas: "flower-1 main flower-2";
+    grid-template-areas: "snow-1 main snow-2";
   }
-  .flower-1 {
+  .snow-1 {
     display:block;
-    grid-area: flower-1;
+    grid-area: snow-1;
   }
   #particles-js, #particles-js2 {
-    height: calc(100vh - .4vh);
+    height: calc(100vh - 4px);
   }
-  .flower-2 {
+  .snow-2 {
     display:block;
-    grid-area: flower-2;
+    grid-area: snow-2;
   }
   .main {
     grid-area: main;

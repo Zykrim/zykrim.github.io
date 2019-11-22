@@ -15,23 +15,23 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 1.5,
+        "value": 100,
         "density": {
           "enable": true,
-          "value_area":1
+          "value_area": 150
         }
       },
       "shape": {
         "type": "image",
         "image": {
-          "src": ["Images/pumpakin2.png","Images/bone.png","Images/leaf.png"],
+          "src": ["Images/snow1.png","Images/snow2.png","Images/snow3.png"],
           "type" : "png",
           "width": 50,
           "height": 50
         }
       },
       "size": {
-        "value": 50,
+        "value": 35,
         "random": true
       },
       "line_linked": {
@@ -40,21 +40,15 @@ particlesJS('particles-js',
       "move": {
         "enable": true,
         "speed": 1.5,
-        "direction": "bottom",
+        "direction": "bottom-left",
         "random": true,
-        "attract": {
-          "enable": true,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
       }
     },
     "interactivity": {
       "detect_on": "canvas",
       "events": {
         "onclick": {
-          "enable": true,
-          "mode": "repulse"
+          "enable": false,
         },
         "onhover": {
           "enable": false,
@@ -68,23 +62,23 @@ particlesJS('particles-js2',
   {
     "particles": {
       "number": {
-        "value": 1.5,
+        "value": 100,
         "density": {
           "enable": true,
-          "value_area": 1
+          "value_area": 150
         }
       },
       "shape": {
         "type": "image",
         "image": {
-          "src": ["Images/pumpakin2.png","Images/bone.png","Images/leaf.png"],
+          "src": ["Images/snow1.png","Images/snow2.png","Images/snow3.png"],
           "type" : "png",
           "width": 50,
           "height": 50
         }
       },
       "size": {
-        "value": 50,
+        "value": 35,
         "random": true
       },
       "line_linked": {
@@ -93,21 +87,15 @@ particlesJS('particles-js2',
       "move": {
         "enable": true,
         "speed": 1.5,
-        "direction": "bottom",
+        "direction": "bottom-left",
         "random": true,
-        "attract": {
-          "enable": true,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
       }
     },
     "interactivity": {
       "detect_on": "canvas",
       "events": {
         "onclick": {
-          "enable": true,
-          "mode": "repulse"
+          "enable": false,
         },
         "onhover": {
           "enable": false,
